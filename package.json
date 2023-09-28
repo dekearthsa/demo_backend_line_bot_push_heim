@@ -1,0 +1,18 @@
+{
+  "name": "demo_backend_line_bot_push",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/datastore": "^8.1.0",
+    "@google-cloud/storage": "^7.1.0",
+    "@line/bot-sdk": "^7.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
