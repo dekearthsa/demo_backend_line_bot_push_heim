@@ -1,4 +1,6 @@
 "use strict";
+// const path = require("path");
+// require('dotenv').config({ path: path.resolve(__dirname, "../../.env") });
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -10,14 +12,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.controllerLinePush = void 0;
-const path = require("path");
-require('dotenv').config({ path: path.resolve(__dirname, "../../.env") });
 const line = require("@line/bot-sdk");
 const { demoFlex } = require("../struct/flex/demoFlex");
 // const { Storage } =  require('@google-cloud/storage');
 const { Datastore } = require('@google-cloud/datastore');
-const CHANNEL_SECRET = process.env.CHANNEL_SECRET || "a123dfdce669ad6868727b47f64415ad";
-const CHANNEL_ACCESS_TOKEN = process.env.CHANNEL_ACCESS_TOKE || "lqHG6mhwJDMus7YLEZbXXRcQsBMSr3gaJCSwIKVBJgc/5jfCit8goM8Gu0RDCzIYsicBN1BdL+RqBkhFsDSQ+e8zwo6UTn2T35zIBwcAVT5tgu9rnu4QeTjnMCpFibp9D8aU8KR19JM0IVX9Nf9NfAdB04t89/1O/w1cDnyilFU=";
+const CHANNEL_SECRET = "";
+const CHANNEL_ACCESS_TOKEN = "";
 // // setup line bot api // //
 const CONFIG = {
     channelAccessToken: CHANNEL_ACCESS_TOKEN,
